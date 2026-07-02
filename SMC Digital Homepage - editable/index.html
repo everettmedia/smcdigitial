@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/9629037b-3cd5-4ebb-9d36-2b964d477951.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/3d93b00e-8fdd-4f26-9aaa-543f82e5cfeb.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/2f40fb85-a273-49bc-a3bb-9208650f2d8b.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/981e082c-9e10-45f0-b92b-4b3beae692a1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/073b668f-c69e-4ea5-81f3-90e37d1cd289.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/b2762b04-5140-4b03-b669-4f970b2fd78b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/9f22b50e-143c-42a1-947c-77c95d049590.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/3d93b00e-8fdd-4f26-9aaa-543f82e5cfeb.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/2f40fb85-a273-49bc-a3bb-9208650f2d8b.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/981e082c-9e10-45f0-b92b-4b3beae692a1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/073b668f-c69e-4ea5-81f3-90e37d1cd289.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/b2762b04-5140-4b03-b669-4f970b2fd78b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/9f22b50e-143c-42a1-947c-77c95d049590.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/3d93b00e-8fdd-4f26-9aaa-543f82e5cfeb.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/2f40fb85-a273-49bc-a3bb-9208650f2d8b.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/981e082c-9e10-45f0-b92b-4b3beae692a1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/073b668f-c69e-4ea5-81f3-90e37d1cd289.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/b2762b04-5140-4b03-b669-4f970b2fd78b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/9f22b50e-143c-42a1-947c-77c95d049590.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/3d93b00e-8fdd-4f26-9aaa-543f82e5cfeb.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/2f40fb85-a273-49bc-a3bb-9208650f2d8b.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/981e082c-9e10-45f0-b92b-4b3beae692a1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/073b668f-c69e-4ea5-81f3-90e37d1cd289.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/b2762b04-5140-4b03-b669-4f970b2fd78b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/9f22b50e-143c-42a1-947c-77c95d049590.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/3d93b00e-8fdd-4f26-9aaa-543f82e5cfeb.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/2f40fb85-a273-49bc-a3bb-9208650f2d8b.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/981e082c-9e10-45f0-b92b-4b3beae692a1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/073b668f-c69e-4ea5-81f3-90e37d1cd289.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/b2762b04-5140-4b03-b669-4f970b2fd78b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/9f22b50e-143c-42a1-947c-77c95d049590.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f15256a0-98f4-4ca0-a3fd-31bd130f5747.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/b6c19b05-b360-4256-91dd-3e21ca5498c4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/2c9465e9-8492-4a76-a6ff-f011e9e39648.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/3ba2d6ff-58c8-4273-8b01-0518d4b8fa2b.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/c345540b-6482-458a-b671-572595ba6f3d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/2fe51e95-a3a9-4bca-883e-76e4c7980d06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/98230619-be06-4c2c-9a2d-b615762e184d.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/892040ef-434e-4137-9171-940e3892639d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/77164df1-acdd-4409-8759-bcb0daaf24b2.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/987a0ff7-866c-4f7b-85fc-28dcee405b8b.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/08e5ab28-1d84-4a6d-9b4d-317baedc1b41.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/ec8fda03-acf4-4af9-bb08-0362a1b8b733.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/74b0d938-b416-4f7f-b797-c07b202db33c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/47a4e533-0d1d-49cf-931a-8df201f54923.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/04ff3661-1f96-4012-9a45-0befc88124ac.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/2b686464-3342-4b3a-8fef-33f48b12da7b.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/3b282545-65aa-4710-8075-96a92e2e2817.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/015bd52e-cf0b-4456-8db9-1dafee034cce.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#ffffff;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  /* ---------- responsive: tablet ---------- */
+  @media (max-width:1024px){
+    [data-r="grid4"]{grid-template-columns:repeat(2,1fr)!important}
+    [data-r="stats-band"]{grid-template-columns:1fr!important;gap:36px!important}
+    [data-r="stats-right"]{border-left:0!important;padding-left:0!important;border-top:1px solid rgba(255,255,255,.12)!important;padding-top:30px!important}
+    [data-r="bento-empty"]{display:none!important}
+  }
+  /* ---------- responsive: phone ---------- */
+  @media (max-width:760px){
+    [data-screen-label="SMC Homepage"]>div{padding-left:20px!important;padding-right:20px!important}
+    [data-r="grid3"],[data-r="grid4"]{grid-template-columns:1fr!important}
+    [data-r="nav-links"]{display:none!important}
+    [data-r="rowwrap"]{flex-wrap:wrap!important;gap:14px!important}
+    [data-r="wrap"]{flex-wrap:wrap!important;row-gap:10px!important}
+    [data-r="proc-line"]{display:none!important}
+    [data-r="lead"]{font-size:17px!important}
+    [data-r="h-hero"]{font-size:clamp(32px,8.6vw,62px)!important}
+    [data-r="h-cta"]{font-size:clamp(28px,7vw,46px)!important}
+    [data-r="h-40"]{font-size:clamp(26px,6.4vw,40px)!important}
+    [data-r="h-38"]{font-size:clamp(25px,6vw,38px)!important}
+    [data-r="h-36"]{font-size:clamp(24px,5.6vw,36px)!important}
+    [data-r="stat-num"]{font-size:34px!important}
+  }
+  /* ---------- responsive: small phone ---------- */
+  @media (max-width:560px){
+    [data-r="hero-band"]{height:300px!important}
+    [data-r="chip"]{display:none!important}
+    [data-r="bars"]{left:16px!important;right:16px!important;gap:3px!important;height:200px!important}
+    [data-r="baseline"]{left:16px!important;right:16px!important}
+  }
+  [data-r="grad-brand"]{background:linear-gradient(100deg,#42eace,#0E9E86)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+  [data-r="marquee"]{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
+  a{transition:background .22s ease,color .22s ease,border-color .22s ease}
+  .bh-green:hover{background:#42eace!important;color:#0D0F12!important}
+  .bh-green:hover .hero-arrow{color:#0D0F12!important}
+  .bh-fill:hover{background:#42eace!important;color:#0D0F12!important;border-color:#42eace!important}
+  .bh-tealbright:hover{background:#42eace!important;color:#0D0F12!important}
+  .bh-teal:hover{background:#42eace!important;color:#0D0F12!important}
+  .bh-ghost:hover{background:#42eace!important;color:#0D0F12!important;border-color:#42eace!important}
+  @media (max-width:860px){.sec2{grid-template-columns:1fr!important}}
+  .bh-inv:hover{background:#0D0F12!important;color:#42eace!important;border-color:#42eace!important}
+  @keyframes smcMarquee{to{transform:translateX(-50%)}}
+  @keyframes smcFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  @keyframes smcSpin{to{transform:rotate(360deg)}}
+</style>
+</helmet>
+
+<div data-screen-label="SMC Homepage" style="max-width:1280px;margin:0 auto;background:#ffffff">
+
+<!-- nav (floating pill) -->
+<div style="padding:20px 40px 8px;position:sticky;top:0;z-index:100">
+  <div style="display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid rgba(13,15,18,.1);border-radius:100px;padding:9px 10px 9px 22px;box-shadow:0 12px 34px -18px rgba(0,0,0,.22)">
+    <img src="assets/smc-logo.jpg" alt="SMC Digital" style="height:34px;width:auto;display:block">
+    <div data-r="nav-links" style="display:flex;gap:28px;font:600 14px Manrope;color:#3a3f44"><span>Services</span><span>Process</span><span>Results</span><span>Pricing</span></div>
+    <a style="font:700 13px Manrope;color:#fff;background:#0D0F12;padding:11px 20px;border-radius:100px;text-decoration:none" class="bh-green" data-hover="background:#0E9E86">Book A Strategy Call</a>
+  </div>
+</div>
+
+<!-- hero (centered) -->
+<div style="padding:96px 48px 120px;text-align:center">
+  <div style="display:inline-flex;align-items:center;gap:8px;font:700 11px Space Mono;letter-spacing:.12em;color:#0E9E86;text-transform:uppercase"><span style="width:7px;height:7px;background:#ff9d5c;border-radius:50%"></span><span data-r="grad-brand">Accepting new partners for Q3</span></div>
+  <h1 data-r="h-hero" style="font:700 62px/1.03 Poppins;letter-spacing:-.035em;color:#0D0F12;margin:22px auto 0;max-width:16ch">Turn traffic into <span style="color:#42eace">predictable</span> revenue.</h1>
+  <p style="font:400 17px/1.6 Manrope;color:#565b60;max-width:58ch;margin:22px auto 0">SMC Digital helps growth-focused businesses scale with data-driven strategy and high-performance campaigns. We reduce cost per acquisition and grow your brand — without the guesswork.</p>
+  <div style="display:flex;align-items:center;justify-content:center;gap:24px;margin:34px 0 0;flex-wrap:wrap">
+    <a style="display:inline-flex;align-items:center;gap:9px;background:#0D0F12;color:#fff;font:600 15px Manrope;padding:15px 26px;border-radius:10px;text-decoration:none" class="bh-green" data-hover="background:#0E9E86">Get Your Free Audit <span class="hero-arrow" style="color:#2FDCC0;transition:color .22s ease">↗</span></a>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="display:flex"><div style="width:34px;height:34px;border-radius:50%;background:#c9cdd0;border:2px solid #fff"></div><div style="width:34px;height:34px;border-radius:50%;background:#9aa0a6;border:2px solid #fff;margin-left:-12px"></div><div style="width:34px;height:34px;border-radius:50%;background:#0D0F12;border:2px solid #fff;margin-left:-12px;display:flex;align-items:center;justify-content:center;color:#2FDCC0;font:700 11px Poppins">+</div></div>
+      <div style="text-align:left"><div style="color:#E8B24A;font:700 12px Manrope;letter-spacing:.1em">★★★★★</div><div style="font:500 12px Manrope;color:#565b60">Trusted by 40+ founders</div></div>
+    </div>
+  </div>
+  <div data-r="wrap" style="display:flex;align-items:center;justify-content:center;gap:20px;margin:36px 0 0;opacity:.55"><span style="font:400 10px Space Mono;letter-spacing:.1em;color:#8a8f94">WORKS WITH</span><span style="font:700 15px Poppins;color:#6a6f74">Shopify</span><span style="font:700 15px Poppins;color:#6a6f74">HubSpot</span><span style="font:700 15px Poppins;color:#6a6f74">GA4</span><span style="font:700 15px Poppins;color:#6a6f74">Klaviyo</span></div>
+</div>
+
+<!-- brands we run marketing for (scrolling marquee) -->
+<div style="padding:8px 0 64px">
+  <div style="text-align:center;font:700 11px Space Mono;letter-spacing:.16em;color:#9aa0a6;text-transform:uppercase;margin-bottom:26px">Brands we run marketing for</div>
+  <div data-r="marquee" style="position:relative;overflow:hidden">
+    <div style="display:flex;width:max-content;animation:smcMarquee 34s linear infinite">
+      <div style="display:flex;align-items:center;gap:64px;padding-right:64px;flex:none"><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Northwind</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Vantage</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Lumen</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Everpeak</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Cobalt</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Meridian</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Halcyon</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Verdant</span></div>
+      <div style="display:flex;align-items:center;gap:64px;padding-right:64px;flex:none" aria-hidden="true"><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Northwind</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Vantage</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Lumen</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Everpeak</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Cobalt</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Meridian</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Halcyon</span><span style="font:700 24px Poppins;color:#9aa0a6;white-space:nowrap">Verdant</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- who we are -->
+<div style="padding:100px 48px">
+  <div class="sec2" style="display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;max-width:1180px;margin:0 auto">
+    <div>
+      <div style="font:700 11px Space Mono;letter-spacing:.16em;color:#0E9E86;text-transform:uppercase;margin-bottom:20px">// WHO WE ARE</div>
+      <h2 style="font:700 clamp(30px,4.4vw,50px)/1.06 Poppins;letter-spacing:-.03em;color:#0D0F12;margin:0 0 22px">A full-suite marketing agency, <span style="color:#42eace">built for scale.</span></h2>
+      <p style="font:400 16px/1.7 Manrope;color:#565b60;margin:0 0 22px;max-width:44ch">We focus on outcomes, not vanity metrics. Every campaign is built to generate measurable business growth.</p>
+      <p style="font:700 16px/1.6 Manrope;color:#0D0F12;margin:0 0 32px">Data-first decision making. No bloated retainers. Direct communication.</p>
+      <a class="bh-green" data-hover="background:#42eace;color:#0D0F12" style="display:inline-flex;align-items:center;gap:9px;background:#0D0F12;color:#fff;font:600 15px Manrope;padding:15px 26px;border-radius:10px;text-decoration:none">Learn More About Us <span class="hero-arrow" style="color:#2FDCC0;transition:color .22s ease">↗</span></a>
+    </div>
+    <div style="position:relative;overflow:hidden;border-radius:22px;background:#0A0B0D;min-height:460px"><img src="assets/office-desk.avif" alt="SMC Digital workspace" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+  </div>
+</div>
+
+<!-- dark stats + services band -->
+<div style="background:#0D0F12;padding:120px 0 0;min-height:1000px;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow:hidden">
+  <canvas id="nb-canvas" style="position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:0"></canvas>
+  <div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 48px;text-align:center">
+    <h2 style="font:700 clamp(30px,5vw,52px)/1.05 Poppins;letter-spacing:-.035em;color:#fff;margin:0 auto">We bridge <span style="color:#42eace">strategy</span><br>and tactical execution</h2>
+    <p style="font:400 16px/1.6 Manrope;color:#8a8f94;max-width:46ch;margin:20px auto 0">Helping you find and win your most profitable customers.</p>
+    <div id="nb-stats" data-r="grid4" style="position:relative;margin:56px auto 0;border-top:1px solid rgba(255,255,255,.12);display:grid;grid-template-columns:repeat(4,1fr);text-align:left">
+      <div id="nb-slider" style="position:absolute;top:0;left:0;width:25%;height:100%;border-radius:16px;z-index:0;pointer-events:none;transform:translateX(0);transition:transform .55s cubic-bezier(.34,1.28,.42,1),border-color .45s ease,background-color .45s ease,box-shadow .45s ease;border:1px solid rgba(66,234,206,.6);background:rgba(66,234,206,.07);box-shadow:0 24px 60px -34px rgba(66,234,206,.6)"></div>
+      <div class="nb-metric" style="position:relative;z-index:1;padding:26px 26px 24px;cursor:pointer">
+        <div data-r="stat-num" class="nb-num" style="font:700 56px Poppins;letter-spacing:-.03em;color:#fff">4.2x</div>
+        <div style="font:400 13px/1.45 Manrope;color:#9aa0a6;margin-top:8px">Avg ROAS across<br>paid campaigns</div>
+      </div>
+      <div class="nb-metric" style="position:relative;z-index:1;padding:26px 26px 24px;cursor:pointer">
+        <div data-r="stat-num" class="nb-num" style="font:700 56px Poppins;letter-spacing:-.03em;color:rgba(255,255,255,.5)">120%</div>
+        <div style="font:400 13px/1.45 Manrope;color:#9aa0a6;margin-top:8px">Avg organic<br>traffic growth</div>
+      </div>
+      <div class="nb-metric" style="position:relative;z-index:1;padding:26px 26px 24px;cursor:pointer">
+        <div data-r="stat-num" class="nb-num" style="font:700 56px Poppins;letter-spacing:-.03em;color:rgba(255,255,255,.5)">38%</div>
+        <div style="font:400 13px/1.45 Manrope;color:#9aa0a6;margin-top:8px">Avg conversion<br>rate lift</div>
+      </div>
+      <div class="nb-metric" style="position:relative;z-index:1;padding:26px 26px 24px;cursor:pointer">
+        <div data-r="stat-num" class="nb-num" style="font:700 56px Poppins;letter-spacing:-.03em;color:rgba(255,255,255,.5)">90%</div>
+        <div style="font:400 13px/1.45 Manrope;color:#9aa0a6;margin-top:8px">Client<br>retention rate</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- what we do -->
+<div style="padding:100px 48px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:640px;margin:0 auto 52px">
+      <div style="font:700 11px Space Mono;letter-spacing:.16em;color:#0E9E86;text-transform:uppercase;margin-bottom:18px">// WHAT WE DO</div>
+      <h2 style="font:700 clamp(30px,4.4vw,50px)/1.05 Poppins;letter-spacing:-.03em;color:#0D0F12;margin:0 0 18px">What we <span style="color:#42eace">do</span>.</h2>
+      <p style="font:400 16px/1.65 Manrope;color:#565b60;margin:0">A full range of services to help growth-focused businesses scale — every discipline working to one measurable goal.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:34px 30px 30px;background:#fff;display:flex;flex-direction:column"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px"><div style="width:52px;height:52px;background:#0D0F12;border-radius:14px;display:flex;align-items:center;justify-content:center"><div style="width:22px;height:13px;background:#2FDCC0;border-radius:4px"></div></div><span style="font:400 12px Space Mono;color:#b7bcc1">01</span></div><h3 style="font:700 21px Poppins;letter-spacing:-.01em;color:#0D0F12;margin:0 0 12px">PPC Campaigns</h3><p style="font:400 14px/1.6 Manrope;color:#63686d;margin:0 0 24px;flex:1">Targeted paid advertising built to generate measurable returns. Structured campaigns, smart bidding, and continuous optimisation ensure your ad spend drives qualified leads and scalable growth.</p><a style="font:700 13px Manrope;color:#0E9E86;text-decoration:none;align-self:flex-start">Learn More →</a></div>
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:34px 30px 30px;background:#fff;display:flex;flex-direction:column"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px"><div style="width:52px;height:52px;background:#0D0F12;border-radius:14px;display:flex;align-items:center;justify-content:center"><div style="width:22px;height:15px;border:2px solid #2FDCC0;border-radius:4px"></div></div><span style="font:400 12px Space Mono;color:#b7bcc1">02</span></div><h3 style="font:700 21px Poppins;letter-spacing:-.01em;color:#0D0F12;margin:0 0 12px">Website Design</h3><p style="font:400 14px/1.6 Manrope;color:#63686d;margin:0 0 24px;flex:1">Conversion-focused websites designed to turn traffic into enquiries. Clean structure, clear messaging, and performance optimisation built around real business objectives.</p><a style="font:700 13px Manrope;color:#0E9E86;text-decoration:none;align-self:flex-start">Learn More →</a></div>
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:34px 30px 30px;background:#fff;display:flex;flex-direction:column"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px"><div style="width:52px;height:52px;background:#0D0F12;border-radius:14px;display:flex;align-items:center;justify-content:center"><div style="display:flex;gap:5px"><span style="width:5px;height:5px;background:#2FDCC0;border-radius:50%"></span><span style="width:5px;height:5px;background:#2FDCC0;border-radius:50%"></span><span style="width:5px;height:5px;background:#2FDCC0;border-radius:50%"></span></div></div><span style="font:400 12px Space Mono;color:#b7bcc1">03</span></div><h3 style="font:700 21px Poppins;letter-spacing:-.01em;color:#0D0F12;margin:0 0 12px">Social Media Management</h3><p style="font:400 14px/1.6 Manrope;color:#63686d;margin:0 0 24px;flex:1">Strategic content and campaign management aligned with your growth goals. Build brand presence, engage the right audience, and generate demand with structured execution.</p><a style="font:700 13px Manrope;color:#0E9E86;text-decoration:none;align-self:flex-start">Learn More →</a></div>
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:34px 30px 30px;background:#fff;display:flex;flex-direction:column"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px"><div style="width:52px;height:52px;background:#0D0F12;border-radius:14px;display:flex;align-items:center;justify-content:center"><div style="display:flex;flex-direction:column;gap:4px"><span style="width:22px;height:3px;background:#2FDCC0;border-radius:2px"></span><span style="width:14px;height:3px;background:#2FDCC0;border-radius:2px"></span></div></div><span style="font:400 12px Space Mono;color:#b7bcc1">04</span></div><h3 style="font:700 21px Poppins;letter-spacing:-.01em;color:#0D0F12;margin:0 0 12px">Email Marketing</h3><p style="font:400 14px/1.6 Manrope;color:#63686d;margin:0 0 24px;flex:1">Targeted campaigns and automated flows designed to nurture leads and increase customer lifetime value. Data-backed messaging that drives consistent engagement and revenue.</p><a style="font:700 13px Manrope;color:#0E9E86;text-decoration:none;align-self:flex-start">Learn More →</a></div>
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:34px 30px 30px;background:#fff;display:flex;flex-direction:column"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px"><div style="width:52px;height:52px;background:#0D0F12;border-radius:14px;display:flex;align-items:center;justify-content:center"><div style="display:flex;align-items:flex-end;gap:3px"><span style="width:5px;height:10px;background:#2FDCC0;border-radius:1px"></span><span style="width:5px;height:17px;background:#2FDCC0;border-radius:1px"></span><span style="width:5px;height:13px;background:#2FDCC0;border-radius:1px"></span></div></div><span style="font:400 12px Space Mono;color:#b7bcc1">05</span></div><h3 style="font:700 21px Poppins;letter-spacing:-.01em;color:#0D0F12;margin:0 0 12px">SEO & Performance Insights</h3><p style="font:400 14px/1.6 Manrope;color:#63686d;margin:0 0 24px;flex:1">Long-term organic growth supported by technical optimisation and detailed analytics. Improve visibility, strengthen authority, and make smarter decisions through real performance data.</p><a style="font:700 13px Manrope;color:#0E9E86;text-decoration:none;align-self:flex-start">Learn More →</a></div>
+      <div style="border-radius:18px;padding:40px 34px;background:#2FDCC0;display:flex;flex-direction:column;justify-content:center"><h3 style="font:700 26px Poppins;letter-spacing:-.02em;color:#06231e;margin:0 0 16px">Not sure where to start?</h3><p style="font:400 15px/1.6 Manrope;color:#0b3b32;margin:0 0 28px">Book a free strategy call and we'll map the fastest path to growth for your business.</p><a class="bh-green" data-hover="background:#0D0F12;color:#fff" style="align-self:flex-start;background:#0D0F12;color:#fff;font:700 14px Manrope;padding:13px 22px;border-radius:100px;text-decoration:none">Book A Call ↗</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- testimonials -->
+<div style="padding:100px 48px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:720px;margin:0 auto 52px">
+      <div style="font:700 11px Space Mono;letter-spacing:.16em;color:#0E9E86;text-transform:uppercase;margin-bottom:18px">// TESTIMONIALS</div>
+      <h2 style="font:700 clamp(28px,3.6vw,38px)/1.15 Poppins;letter-spacing:-.02em;color:#0D0F12;margin:0 auto;max-width:22ch">Helping ambitious brands engineer <span style="color:#42eace">marketing engines</span> that dominate their category.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:32px 30px;background:#fff;display:flex;flex-direction:column"><div style="color:#42eace;font-size:14px;letter-spacing:3px;margin-bottom:18px">★★★★★</div><p style="font:400 16px/1.65 Manrope;color:#3a3f44;margin:0 0 26px;flex:1">“SMC audited our funnel and identified leaks we didn't know existed. In 60 days our conversion rate jumped from 1.2% to 3.5%.”</p><div style="display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;border-radius:50%;background:#0D0F12;color:#2FDCC0;display:flex;align-items:center;justify-content:center;font:700 13px Manrope">SJ</div><div><div style="font:700 15px Manrope;color:#0D0F12">Sarah Jenkins</div><div style="font:400 13px Manrope;color:#8a8f94">Founder, StyleCo</div></div></div></div>
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:32px 30px;background:#fff;display:flex;flex-direction:column"><div style="color:#42eace;font-size:14px;letter-spacing:3px;margin-bottom:18px">★★★★★</div><p style="font:400 16px/1.65 Manrope;color:#3a3f44;margin:0 0 26px;flex:1">“Finally an agency that talks in revenue, not vanity metrics. Our ROAS is up 3.2× and we finally understand exactly what's driving it.”</p><div style="display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;border-radius:50%;background:#0D0F12;color:#2FDCC0;display:flex;align-items:center;justify-content:center;font:700 13px Manrope">JT</div><div><div style="font:700 15px Manrope;color:#0D0F12">James Tan</div><div style="font:400 13px Manrope;color:#8a8f94">Director, Northwind</div></div></div></div>
+      <div style="border:1px solid rgba(13,15,18,.1);border-radius:18px;padding:32px 30px;background:#fff;display:flex;flex-direction:column"><div style="color:#42eace;font-size:14px;letter-spacing:3px;margin-bottom:18px">★★★★★</div><p style="font:400 16px/1.65 Manrope;color:#3a3f44;margin:0 0 26px;flex:1">“Direct, data-led and refreshingly honest. SMC rebuilt our paid strategy and doubled our qualified leads in a single quarter.”</p><div style="display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;border-radius:50%;background:#0D0F12;color:#2FDCC0;display:flex;align-items:center;justify-content:center;font:700 13px Manrope">PN</div><div><div style="font:700 15px Manrope;color:#0D0F12">Priya Nair</div><div style="font:400 13px Manrope;color:#8a8f94">Marketing Lead, Everpeak</div></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- how it works -->
+<div style="background:#0A0B0D;padding:100px 0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw">
+  <div style="max-width:1180px;margin:0 auto;padding:0 48px">
+    <div style="text-align:center;max-width:620px;margin:0 auto 56px">
+      <div style="font:700 11px Space Mono;letter-spacing:.18em;color:#42eace;text-transform:uppercase;margin-bottom:18px">// HOW WE WORK</div>
+      <h2 style="font:700 clamp(30px,4.4vw,50px)/1.05 Poppins;letter-spacing:-.03em;color:#fff;margin:0 0 18px">How we <span style="color:#42eace">work</span>.</h2>
+      <p style="font:400 16px/1.65 Manrope;color:#9aa0a6;margin:0">Our services are structured to deliver clarity, performance, and long-term scalability.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px">
+      <div style="background:#111316;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:36px 32px 40px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:44px"><div style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(66,234,206,.5);display:flex;align-items:center;justify-content:center;font:700 16px Poppins;color:#42eace">1</div><span style="font:700 11px Space Mono;letter-spacing:.18em;color:#6a6f74">AUDIT</span></div><h3 style="font:700 22px Poppins;letter-spacing:-.01em;color:#fff;margin:0 0 12px">Audit &amp; Data Review</h3><p style="font:400 15px/1.6 Manrope;color:#9aa0a6;margin:0">We analyse your current performance, market position, and growth potential.</p></div>
+      <div style="background:#111316;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:36px 32px 40px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:44px"><div style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(66,234,206,.5);display:flex;align-items:center;justify-content:center;font:700 16px Poppins;color:#42eace">2</div><span style="font:700 11px Space Mono;letter-spacing:.18em;color:#6a6f74">STRATEGY</span></div><h3 style="font:700 22px Poppins;letter-spacing:-.01em;color:#fff;margin:0 0 12px">Strategy Development</h3><p style="font:400 15px/1.6 Manrope;color:#9aa0a6;margin:0">A tailored roadmap built around measurable KPIs and growth objectives.</p></div>
+      <div style="background:#111316;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:36px 32px 40px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:44px"><div style="width:44px;height:44px;border-radius:50%;background:#42eace;display:flex;align-items:center;justify-content:center;font:700 16px Poppins;color:#0A0B0D">3</div><span style="font:700 11px Space Mono;letter-spacing:.18em;color:#6a6f74">EXECUTION</span></div><h3 style="font:700 22px Poppins;letter-spacing:-.01em;color:#fff;margin:0 0 12px">Execution &amp; Optimisation</h3><p style="font:400 15px/1.6 Manrope;color:#9aa0a6;margin:0">Campaigns built for performance and efficiency, and continuously improved.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:52px">
+      <a class="bh-inv" style="display:inline-flex;align-items:center;gap:9px;background:#42eace;color:#0D0F12;font:700 15px Manrope;padding:15px 32px;border-radius:100px;text-decoration:none;border:1px solid transparent">Get Started Today →</a>
+    </div>
+  </div>
+</div>
+
+<!-- meet the owner -->
+<div style="padding:100px 48px">
+  <div class="sec2" style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;max-width:1180px;margin:0 auto">
+    <div style="position:relative;overflow:hidden;border-radius:22px;background:#0A0B0D;min-height:480px"><img src="assets/sean.avif" alt="Sean McKenzie" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"><div style="position:absolute;top:24px;left:26px;font:700 11px Space Mono;letter-spacing:.16em;color:#2FDCC0;text-shadow:0 1px 8px rgba(0,0,0,.6)">// SEAN MCKENZIE</div></div>
+    <div>
+      <div style="font:700 11px Space Mono;letter-spacing:.16em;color:#0E9E86;text-transform:uppercase;margin-bottom:18px">// THE FOUNDER</div>
+      <h2 style="font:700 clamp(30px,4.2vw,46px)/1.05 Poppins;letter-spacing:-.03em;color:#0D0F12;margin:0 0 24px">Meet the <span style="color:#42eace">owner</span>.</h2>
+      <p style="font:400 16px/1.7 Manrope;color:#565b60;margin:0 0 18px">I'm Sean McKenzie, Director of SMC Digital, and I help businesses grow through smart, data-led digital marketing.</p>
+      <p style="font:400 16px/1.7 Manrope;color:#565b60;margin:0 0 18px">When I'm not working with clients, you'll usually find me on the golf course, diving into the latest golf tech, or having a beer at the local pub.</p>
+      <p style="font:400 16px/1.7 Manrope;color:#565b60;margin:0 0 18px">I've spent over a decade working with businesses across Australia, New Zealand, and the US — managing PPC, websites, SEO, social, and email. With a strong sales background, I focus on marketing that actually converts, not just clicks or impressions.</p>
+      <p style="font:400 16px/1.7 Manrope;color:#565b60;margin:0">I started SMC Digital to be different from the typical agency model. When you work with me, you work directly with me — no offshore teams, no account handovers; just honest advice, clear strategy, and marketing built around your goals.</p>
+    </div>
+  </div>
+</div>
+
+<!-- pricing -->
+<div style="padding:100px 48px">
+  <div style="font:700 11px Space Mono;letter-spacing:.16em;color:#0E9E86;margin-bottom:12px">// ENGAGEMENTS</div>
+  <h2 data-r="h-38" style="font:700 38px/1.08 Poppins;letter-spacing:-.03em;color:#0D0F12;margin:0 0 34px">Simple, transparent pricing.</h2>
+  <div data-r="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div style="border:1px solid rgba(13,15,18,.14);border-radius:16px;padding:30px"><div style="font:700 11px Space Mono;letter-spacing:.1em;color:#8a8f94">STARTER SPRINT</div><div style="font:700 38px Poppins;letter-spacing:-.03em;color:#0D0F12;margin:16px 0 2px">$1.5k<span style="font:500 14px Manrope;color:#8a8f94"> / project</span></div><p style="font:400 13px/1.5 Manrope;color:#63686d;margin:8px 0 20px">Fix one channel, prove the model fast.</p><div style="display:flex;flex-direction:column;gap:9px;font:500 13px Manrope;color:#3a3f44"><div><span style="color:#0E9E86">✓</span>&nbsp; Full channel audit</div><div><span style="color:#0E9E86">✓</span>&nbsp; 90-day action plan</div><div><span style="color:#0E9E86">✓</span>&nbsp; One priority channel</div></div><a style="display:block;text-align:center;margin-top:24px;border:1px solid #0D0F12;color:#0D0F12;font:600 14px Manrope;padding:12px;border-radius:9px;text-decoration:none" class="bh-fill" data-hover="background:#0D0F12;color:#fff">Book A Call</a></div>
+    <div style="border:1.5px solid #0D0F12;border-radius:16px;padding:30px;background:#0D0F12;position:relative"><div style="position:absolute;top:-11px;left:30px;background:#2FDCC0;color:#06231e;font:700 10px Space Mono;letter-spacing:.08em;padding:5px 10px;border-radius:100px">MOST POPULAR</div><div style="font:700 11px Space Mono;letter-spacing:.1em;color:#2FDCC0">GROWTH ENGINE</div><div style="font:700 38px Poppins;letter-spacing:-.03em;color:#fff;margin:16px 0 2px">$3k<span style="font:500 14px Manrope;color:#9aa0a6"> / month</span></div><p style="font:400 13px/1.5 Manrope;color:#9aa0a6;margin:8px 0 20px">Multi-channel growth, managed end to end.</p><div style="display:flex;flex-direction:column;gap:9px;font:500 13px Manrope;color:#e6e8ea"><div><span style="color:#2FDCC0">✓</span>&nbsp; 2–3 channels managed</div><div><span style="color:#2FDCC0">✓</span>&nbsp; Weekly optimisation</div><div><span style="color:#2FDCC0">✓</span>&nbsp; Live reporting dashboard</div><div><span style="color:#2FDCC0">✓</span>&nbsp; Direct Slack line</div></div><a style="display:block;text-align:center;margin-top:24px;background:#2FDCC0;color:#06231e;font:700 14px Manrope;padding:12px;border-radius:9px;text-decoration:none" class="bh-tealbright" data-hover="background:#4fe9d0">Book A Strategy Call</a></div>
+    <div style="border:1px solid rgba(13,15,18,.14);border-radius:16px;padding:30px"><div style="font:700 11px Space Mono;letter-spacing:.1em;color:#8a8f94">SCALE PARTNER</div><div style="font:700 38px Poppins;letter-spacing:-.03em;color:#0D0F12;margin:16px 0 2px">Custom</div><p style="font:400 13px/1.5 Manrope;color:#63686d;margin:8px 0 20px">A full growth team across every channel.</p><div style="display:flex;flex-direction:column;gap:9px;font:500 13px Manrope;color:#3a3f44"><div><span style="color:#0E9E86">✓</span>&nbsp; All channels + creative</div><div><span style="color:#0E9E86">✓</span>&nbsp; Dedicated pod</div><div><span style="color:#0E9E86">✓</span>&nbsp; Quarterly strategy offsites</div></div><a style="display:block;text-align:center;margin-top:24px;border:1px solid #0D0F12;color:#0D0F12;font:600 14px Manrope;padding:12px;border-radius:9px;text-decoration:none" class="bh-fill" data-hover="background:#0D0F12;color:#fff">Talk To Us</a></div>
+  </div>
+</div>
+
+<!-- final CTA -->
+<div style="padding:100px 48px">
+  <div style="position:relative;overflow:hidden;border-radius:24px;background:linear-gradient(115deg,#0A0B0D 30%,#06231e 75%,#0a3d33);padding:70px 48px;text-align:center">
+    <div style="position:absolute;inset:0;background:radial-gradient(80% 120% at 90% 90%,rgba(47,220,192,.25),transparent 55%)"></div>
+    <div style="position:relative">
+      <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:7px 14px;border-radius:100px;font:700 10px Space Mono;letter-spacing:.14em;color:#2FDCC0">RESULTS IN 90 DAYS</div>
+      <h2 data-r="h-cta" style="font:700 46px/1.08 Poppins;letter-spacing:-.03em;color:#fff;margin:20px 0 14px">Ready to scale your revenue engine?</h2>
+      <p style="font:400 16px/1.6 Manrope;color:#9aa0a6;max-width:52ch;margin:0 auto 30px">Join 40+ ambitious brands using our systems to acquire customers profitably and dominate their niche.</p>
+      <div data-r="wrap" style="display:flex;gap:14px;justify-content:center"><a style="background:#fff;color:#0D0F12;font:700 15px Manrope;padding:15px 28px;border-radius:100px;text-decoration:none" class="bh-teal" data-hover="background:#2FDCC0">Get Your Free Audit</a><a style="background:transparent;color:#fff;font:700 15px Manrope;padding:15px 26px;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.3)" class="bh-ghost" data-hover="background:rgba(255,255,255,.1)">Book a 15-min Call</a></div>
+      <div data-r="wrap" style="display:flex;gap:26px;justify-content:center;margin-top:24px;font:500 12px Manrope;color:#8a8f94"><span><span style="color:#2FDCC0">●</span> Limited spots for Q3</span><span><span style="color:#E8B24A">★</span> 4.9 client satisfaction</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<div style="padding:72px 48px 40px">
+  <div data-r="grid4" style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;padding-bottom:34px;border-bottom:1px solid rgba(13,15,18,.12)">
+    <div><div style="margin-bottom:14px"><img src="assets/smc-logo.jpg" alt="SMC Digital" style="height:36px;width:auto;display:block"></div><div style="font:400 10px Space Mono;letter-spacing:.1em;color:#8a8f94;margin-bottom:12px">MARKETING, ENGINEERED</div><p style="font:400 14px/1.6 Manrope;color:#63686d;max-width:34ch;margin:0">We partner with founders and marketing leaders to build profitable, scalable customer-acquisition systems.</p></div>
+    <div><div style="font:700 11px Space Mono;letter-spacing:.1em;color:#9a9fa4;margin-bottom:14px">SERVICES</div><div style="display:flex;flex-direction:column;gap:10px;font:500 14px Manrope;color:#3a3f44"><span>Paid Media</span><span>SEO &amp; Organic</span><span>Email &amp; SMS</span><span>CRO Audits</span></div></div>
+    <div><div style="font:700 11px Space Mono;letter-spacing:.1em;color:#9a9fa4;margin-bottom:14px">RESOURCES</div><div style="display:flex;flex-direction:column;gap:10px;font:500 14px Manrope;color:#3a3f44"><span>Case Studies</span><span>Growth Blog</span><span>ROI Calculator</span><span>Webinars</span></div></div>
+    <div><div style="font:700 11px Space Mono;letter-spacing:.1em;color:#9a9fa4;margin-bottom:14px">COMPANY</div><div style="display:flex;flex-direction:column;gap:10px;font:500 14px Manrope;color:#3a3f44"><span>About</span><span>Careers</span><span>Partners</span><span>Contact</span></div></div>
+  </div>
+  <div data-r="rowwrap" style="display:flex;justify-content:space-between;align-items:center;padding-top:22px;font:400 11px Space Mono;letter-spacing:.04em;color:#8a8f94"><span>© 2026 SMC DIGITAL, INC.</span></div>
+</div>
+</div>
+</x-dc>
+<script id="nb-fiber-script">
+(function () {
+  // Single source of truth for the needle colour.  Format: "R, G, B".
+  var FIBER_RGB = '255, 255, 255';   // light needles on the dark section
+
+  var SCALE = 0.85;                              // overall beam length (bigger)
+  var XSCALE = 1.18, YSCALE = 0.9;              // stretch wider, flatten height
+  var TIME_SPEED = 1.3;                          // autonomous sway / morph speed
+  var PUSH = 85;                                // cursor push distance
+  var SPRING_STIFF = 0.045, SPRING_DAMP = 0.86;   // rebound springiness (looser / slower settle)
+  var NUM_FIBERS = 140;
+  var MOUSE_RADIUS = 220, MOUSE_STRENGTH = 0.7;
+
+  // metric palette (brand teal + complements) and colour helpers
+  var METRIC_COLORS = [[66, 234, 206], [255, 157, 92], [183, 139, 255], [90, 162, 255]];  // teal / orange / purple / blue
+  function lighten(rgb, t) { return [Math.round(rgb[0] + (255 - rgb[0]) * t), Math.round(rgb[1] + (255 - rgb[1]) * t), Math.round(rgb[2] + (255 - rgb[2]) * t)]; }
+  function rgbaStr(rgb, a) { return 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + a + ')'; }
+
+  function start() {
+    var canvas = document.getElementById('nb-canvas');
+    if (!canvas || !canvas.getBoundingClientRect().width) { return setTimeout(start, 60); }
+
+    var ctx = canvas.getContext('2d');
+    var W = 0, H = 0, paused = false, time = 0, lastTime = performance.now();
+    var mouseX = -9999, mouseY = -9999, mouseActive = false;
+    var fibers = [];
+    var activeRGB = METRIC_COLORS[0].slice();   // colour currently shown by the graphic
+    var targetRGB = METRIC_COLORS[0].slice();   // colour of the selected metric
+
+    function resize() {
+      var r = canvas.getBoundingClientRect();
+      var dpr = window.devicePixelRatio || 1;
+      W = r.width; H = r.height;
+      canvas.width = Math.max(1, Math.round(W * dpr));
+      canvas.height = Math.max(1, Math.round(H * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    if (window.ResizeObserver) { try { new ResizeObserver(resize).observe(canvas); } catch (e) {} }
+    window.addEventListener('resize', resize);
+
+    var host = canvas.parentElement;   // listen on the section so beams react even over the content
+    host.addEventListener('mousemove', function (e) {
+      var r = canvas.getBoundingClientRect();
+      mouseX = e.clientX - r.left; mouseY = e.clientY - r.top; mouseActive = true;
+    });
+    host.addEventListener('mouseleave', function () { mouseActive = false; });
+
+    class SubFiber {
+      constructor(baseAngle, lengthFraction, parentLength, opacityMult, lineWidthMult, dotRadius) {
+        this.angleOffset = (Math.random() - 0.5) * 0.06;
+        this.baseAngle = baseAngle + (Math.random() - 0.5) * 0.08;
+        this.angle = this.baseAngle + this.angleOffset;
+        this.length = parentLength * lengthFraction;
+        this.opacityMult = opacityMult;
+        this.lineWidthMult = lineWidthMult;
+        this.dotRadius = dotRadius;
+        this.swaySpeed = 0.00016 + Math.random() * 0.00032;
+        this.swayAmp = 0.015 + Math.random() * 0.042;
+        this.swayPhase = Math.random() * Math.PI * 2;
+        this.swaySpeed2 = 0.00024 + Math.random() * 0.00035;
+        this.swayPhase2 = Math.random() * Math.PI * 2;
+        this.swaySpeed3 = 0.00007 + Math.random() * 0.00015;
+        this.swayPhase3 = Math.random() * Math.PI * 2;
+        this.swayAmp3 = 0.006 + Math.random() * 0.015;
+        this.maxDotRadius = this.dotRadius;
+        this.dotPulseSpeed = 0.0008 + Math.random() * 0.0015;
+        this.dotPulsePhase = Math.random() * Math.PI * 2;
+        this.tipOffsetX = 0; this.tipOffsetY = 0; this.tipVelX = 0; this.tipVelY = 0;
+      }
+      update(t) {
+        const sway1 = Math.sin(t * this.swaySpeed + this.swayPhase) * this.swayAmp;
+        const sway2 = Math.sin(t * this.swaySpeed2 + this.swayPhase2) * this.swayAmp * 0.6;
+        const sway3 = Math.sin(t * this.swaySpeed3 + this.swayPhase3) * this.swayAmp3;
+        this.angle = this.baseAngle + this.angleOffset + sway1 + sway2 + sway3;
+      }
+      draw(ctx, cx, cy, alpha, lineWidth, t) {
+        let tipX = cx + Math.cos(this.angle) * this.length * XSCALE;
+        let tipY = cy + Math.sin(this.angle) * this.length * YSCALE;
+        let tipOffsetX = 0, tipOffsetY = 0;
+        if (mouseActive) {
+          const dx = tipX - mouseX, dy = tipY - mouseY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          const lenFactor = Math.max(this.length / 350, 0.4);
+          const effectiveRadius = MOUSE_RADIUS * lenFactor + 72;
+          if (dist < effectiveRadius && dist > 0.1) {
+            const norm = dist / effectiveRadius;
+            const force = Math.pow(1 - norm, 3) * MOUSE_STRENGTH;
+            tipOffsetX = (dx / dist) * force * PUSH;
+            tipOffsetY = (dy / dist) * force * PUSH;
+          }
+        }
+        this.tipVelX = (this.tipVelX + (tipOffsetX - this.tipOffsetX) * SPRING_STIFF) * SPRING_DAMP; this.tipOffsetX += this.tipVelX;
+        this.tipVelY = (this.tipVelY + (tipOffsetY - this.tipOffsetY) * SPRING_STIFF) * SPRING_DAMP; this.tipOffsetY += this.tipVelY;
+        tipX += this.tipOffsetX; tipY += this.tipOffsetY;
+        const a = alpha * this.opacityMult;
+        const lw = lineWidth * this.lineWidthMult;
+        ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(tipX, tipY);
+        ctx.strokeStyle = `rgba(${FIBER_RGB}, ${a * 0.95})`;
+        ctx.lineWidth = lw; ctx.stroke();
+        const subDotPulse = 0.55 + 0.45 * Math.sin(t * this.dotPulseSpeed + this.dotPulsePhase);
+        const subDotR = this.maxDotRadius * subDotPulse;
+        ctx.beginPath(); ctx.arc(tipX, tipY, subDotR, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${FIBER_RGB}, ${a})`; ctx.fill();
+      }
+    }
+
+    class Fiber {
+      constructor(index, total) {
+        const startAngle = -190;
+        const angleStep = 200 / (total - 1);
+        this.baseAngle = (startAngle + angleStep * index) * (Math.PI / 180);
+        this.index = index;
+        this.angleOffset = (Math.random() - 0.5) * 0.04;
+        this.angle = this.baseAngle + this.angleOffset;
+        const normPos = index / (total - 1);
+        const sinFactor = Math.sin(normPos * Math.PI);
+        const widthStretch = 1.0 + (1.0 - sinFactor) * 0.35;
+        const outlierChance = Math.random();
+        let outlierBonus = 0;
+        if (outlierChance > 0.92) outlierBonus = 100 + Math.random() * 60;
+        else if (outlierChance > 0.85) outlierBonus = 40 + Math.random() * 80;
+        else if (outlierChance > 0.7) outlierBonus = 15 + Math.random() * 35;
+        const baseLen = (270 + sinFactor * 160 + Math.random() * 60 + outlierBonus) * widthStretch;
+        this.maxLength = baseLen * SCALE;
+        this.length = this.maxLength;
+        this.maxDotRadius = 0.8 + Math.random() * 1.2;
+        this.dotRadius = this.maxDotRadius;
+        this.dotPulseSpeed = 0.0006 + Math.random() * 0.0012;
+        this.dotPulsePhase = Math.random() * Math.PI * 2;
+        this.opacity = 0.88 + Math.random() * 0.12;
+        this.baseOpacity = this.opacity;
+        this.fadeTarget = this.opacity;
+        this.fadePhase = Math.random() * Math.PI * 2;
+        this.fadeSpeed = 0.0002 + Math.random() * 0.0004;
+        this.fadeChance = 0.003 + Math.random() * 0.004;
+        this.isFading = false;
+        this.fadeTarget = this.opacity;
+        this.lineWidth = 0.1 + Math.random() * 0.3;
+        this.swaySpeed = 0.00011 + Math.random() * 0.00024;
+        this.swayAmp = 0.01 + Math.random() * 0.03;
+        this.swayPhase = Math.random() * Math.PI * 2;
+        this.swaySpeed2 = 0.00016 + Math.random() * 0.00026;
+        this.swayPhase2 = Math.random() * Math.PI * 2;
+        this.swaySpeed3 = 0.00004 + Math.random() * 0.0001;
+        this.swayPhase3 = Math.random() * Math.PI * 2;
+        this.swayAmp3 = 0.004 + Math.random() * 0.01;
+        this.curveBend = (Math.random() - 0.5) * 0.12;
+        this.curveBendTarget = this.curveBend;
+        this.mouseAngleOffset = 0; this.mouseCurveOffset = 0;
+        this.subFibers = [];
+        this.subFibers.push(new SubFiber(this.baseAngle, 0.65 + Math.random() * 0.2, this.maxLength, 0.75, 0.85, 0.8 + Math.random() * 1.0));
+        this.subFibers.push(new SubFiber(this.baseAngle, 0.4 + Math.random() * 0.2, this.maxLength, 0.65, 0.7, 0.6 + Math.random() * 0.9));
+        if (Math.random() > 0.3) {
+          this.subFibers.push(new SubFiber(this.baseAngle, 0.18 + Math.random() * 0.17, this.maxLength, 0.5, 0.55, 0.5 + Math.random() * 0.7));
+        }
+      }
+      update(dt, t) {
+        const sway1 = Math.sin(t * this.swaySpeed + this.swayPhase) * this.swayAmp;
+        const sway2 = Math.sin(t * this.swaySpeed2 + this.swayPhase2) * this.swayAmp * 0.6;
+        const sway3 = Math.sin(t * this.swaySpeed3 + this.swayPhase3) * this.swayAmp3;
+        this.angle = this.baseAngle + this.angleOffset + sway1 + sway2 + sway3;
+        if (!this.isFading && Math.random() < this.fadeChance * dt) {
+          this.isFading = true; this.fadeTarget = 0.35 + Math.random() * 0.2;
+        } else if (this.isFading && this.opacity <= this.fadeTarget + 0.02) {
+          this.isFading = false; this.fadeTarget = this.baseOpacity * (0.9 + Math.random() * 0.1);
+        }
+        this.opacity += (this.fadeTarget - this.opacity) * 0.015;
+        this.curveBend += (this.curveBendTarget - this.curveBend) * 0.02;
+        if (Math.random() < 0.002) { this.curveBendTarget = (Math.random() - 0.5) * 0.12; }
+        for (const sub of this.subFibers) sub.update(t);
+      }
+      draw(ctx, cx, cy, t) {
+        const alpha = this.opacity;
+        const angle = this.angle;
+        let tipX = cx + Math.cos(angle) * this.length * XSCALE;
+        let tipY = cy + Math.sin(angle) * this.length * YSCALE;
+        let tipOffsetX = 0, tipOffsetY = 0;
+        if (mouseActive) {
+          const dx = tipX - mouseX, dy = tipY - mouseY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          const lenFactor = Math.max(this.length / 350, 0.4);
+          const effectiveRadius = MOUSE_RADIUS * lenFactor + 72;
+          if (dist < effectiveRadius && dist > 0.1) {
+            const norm = dist / effectiveRadius;
+            const force = Math.pow(1 - norm, 3) * MOUSE_STRENGTH;
+            tipOffsetX = (dx / dist) * force * PUSH;
+            tipOffsetY = (dy / dist) * force * PUSH;
+          }
+        }
+        if (this.tipOffsetX === undefined) { this.tipOffsetX = 0; this.tipOffsetY = 0; this.tipVelX = 0; this.tipVelY = 0; }
+        this.tipVelX = (this.tipVelX + (tipOffsetX - this.tipOffsetX) * SPRING_STIFF) * SPRING_DAMP; this.tipOffsetX += this.tipVelX;
+        this.tipVelY = (this.tipVelY + (tipOffsetY - this.tipOffsetY) * SPRING_STIFF) * SPRING_DAMP; this.tipOffsetY += this.tipVelY;
+        tipX += this.tipOffsetX; tipY += this.tipOffsetY;
+        ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(tipX, tipY);
+        ctx.strokeStyle = `rgba(${FIBER_RGB}, ${alpha})`;
+        ctx.lineWidth = this.lineWidth; ctx.stroke();
+        const dotPulse = 0.55 + 0.45 * Math.sin(t * this.dotPulseSpeed + this.dotPulsePhase);
+        const currentDotR = this.maxDotRadius * dotPulse;
+        ctx.beginPath(); ctx.arc(tipX, tipY, currentDotR, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${FIBER_RGB}, ${alpha})`; ctx.fill();
+        for (const sub of this.subFibers) sub.draw(ctx, cx, cy, alpha, this.lineWidth, time);
+      }
+    }
+
+    for (var i = 0; i < NUM_FIBERS; i++) fibers.push(new Fiber(i, NUM_FIBERS));
+
+    function drawCentralGlow() {
+      var cx = W / 2, cy = H;
+      var base = [Math.round(activeRGB[0]), Math.round(activeRGB[1]), Math.round(activeRGB[2])];
+      var core = lighten(base, 0.42);
+      var g1 = ctx.createRadialGradient(cx, cy, 0, cx, cy, 480);
+      g1.addColorStop(0, rgbaStr(core, 0.18));
+      g1.addColorStop(0.15, rgbaStr(base, 0.10));
+      g1.addColorStop(0.4, rgbaStr(base, 0.05));
+      g1.addColorStop(0.7, rgbaStr(base, 0.02));
+      g1.addColorStop(1, rgbaStr(base, 0));
+      ctx.fillStyle = g1; ctx.fillRect(0, 0, W, H);
+      var g2 = ctx.createRadialGradient(cx, cy, 0, cx, cy, 160);
+      g2.addColorStop(0, rgbaStr(lighten(base, 0.72), 0.22));
+      g2.addColorStop(0.4, rgbaStr(core, 0.08));
+      g2.addColorStop(1, rgbaStr(base, 0));
+      ctx.fillStyle = g2; ctx.fillRect(0, 0, W, H);
+    }
+
+    function animate(now) {
+      if (paused) return;
+      var dt = Math.min((now - lastTime) / 16.67, 3);
+      lastTime = now; time += dt * 16.67 * TIME_SPEED;
+      // ease the graphic colour toward the selected metric
+      activeRGB[0] += (targetRGB[0] - activeRGB[0]) * 0.08;
+      activeRGB[1] += (targetRGB[1] - activeRGB[1]) * 0.08;
+      activeRGB[2] += (targetRGB[2] - activeRGB[2]) * 0.08;
+      var ar = [Math.round(activeRGB[0]), Math.round(activeRGB[1]), Math.round(activeRGB[2])];
+      FIBER_RGB = lighten(ar, 0.45).join(', ');   // light-tinted needles carry the hue
+      ctx.clearRect(0, 0, W, H);
+      drawCentralGlow();
+      var cx = W / 2, cy = H + 5;
+      ctx.save();
+      ctx.globalCompositeOperation = 'screen';
+      for (var f = 0; f < fibers.length; f++) { fibers[f].update(dt, time); fibers[f].draw(ctx, cx, cy, time); }
+      ctx.restore();
+      var g3 = ctx.createRadialGradient(cx, cy, 0, cx, cy, 110);
+      g3.addColorStop(0, rgbaStr(lighten(ar, 0.5), 0.12));
+      g3.addColorStop(1, rgbaStr(ar, 0));
+      ctx.fillStyle = g3; ctx.fillRect(0, 0, W, H);
+      requestAnimationFrame(animate);
+    }
+    function setupMetrics() {
+      var stats = document.getElementById('nb-stats');
+      var slider = document.getElementById('nb-slider');
+      if (!stats || !slider) { return setTimeout(setupMetrics, 60); }
+      var cells = stats.querySelectorAll('.nb-metric');
+      var nums = stats.querySelectorAll('.nb-num');
+      function select(i) {
+        var c = METRIC_COLORS[i];
+        targetRGB = c.slice();                                  // graphic eases to this colour
+        slider.style.transform = 'translateX(' + (i * 100) + '%)';
+        slider.style.borderColor = rgbaStr(c, 0.6);
+        slider.style.background = rgbaStr(c, 0.07);
+        slider.style.boxShadow = '0 24px 60px -34px ' + rgbaStr(c, 0.6);
+        for (var n = 0; n < nums.length; n++) nums[n].style.color = (n === i) ? '#fff' : 'rgba(255,255,255,.5)';
+      }
+      for (var k = 0; k < cells.length; k++) {
+        (function (idx) { cells[idx].addEventListener('click', function () { select(idx); }); })(k);
+      }
+      select(0);
+    }
+    setupMetrics();
+
+    requestAnimationFrame(animate);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+</script>
+
+
+
+</body></html>
