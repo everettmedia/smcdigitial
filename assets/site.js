@@ -128,8 +128,7 @@
         this.dotRadius = this.maxDotRadius;
         this.dotPulseSpeed = 0.0006 + Math.random() * 0.0012;
         this.dotPulsePhase = Math.random() * Math.PI * 2;
-        this.sinFactor = sinFactor;
-        this.opacity = Math.min(1, 0.88 + sinFactor * 0.12 + Math.random() * 0.06);
+        this.opacity = 0.88 + Math.random() * 0.12;
         this.baseOpacity = this.opacity;
         this.fadeTarget = this.opacity;
         this.fadePhase = Math.random() * Math.PI * 2;
@@ -137,7 +136,7 @@
         this.fadeChance = 0.003 + Math.random() * 0.004;
         this.isFading = false;
         this.fadeTarget = this.opacity;
-        this.lineWidth = (0.1 + Math.random() * 0.3) * (1 + sinFactor * 1.6) + sinFactor * 0.35;   // front-facing needles thicker / more solid
+        this.lineWidth = (0.1 + Math.random() * 0.3) * (1 + sinFactor * 0.8);
         this.swaySpeed = 0.00011 + Math.random() * 0.00024;
         this.swayAmp = 0.01 + Math.random() * 0.03;
         this.swayPhase = Math.random() * Math.PI * 2;
@@ -150,10 +149,11 @@
         this.curveBendTarget = this.curveBend;
         this.mouseAngleOffset = 0; this.mouseCurveOffset = 0;
         this.subFibers = [];
-        this.subFibers.push(new SubFiber(this.baseAngle, 0.65 + Math.random() * 0.2, this.maxLength, 0.75, 0.85, 0.8 + Math.random() * 1.0));
-        this.subFibers.push(new SubFiber(this.baseAngle, 0.4 + Math.random() * 0.2, this.maxLength, 0.65, 0.7, 0.6 + Math.random() * 0.9));
+        // shorter sub-needles read as pointing at the viewer — keep them the MOST solid, not the least
+        this.subFibers.push(new SubFiber(this.baseAngle, 0.65 + Math.random() * 0.2, this.maxLength, 0.85, 0.85, 0.8 + Math.random() * 1.0));
+        this.subFibers.push(new SubFiber(this.baseAngle, 0.4 + Math.random() * 0.2, this.maxLength, 0.95, 0.9, 0.6 + Math.random() * 0.9));
         if (Math.random() > 0.3) {
-          this.subFibers.push(new SubFiber(this.baseAngle, 0.18 + Math.random() * 0.17, this.maxLength, 0.5, 0.55, 0.5 + Math.random() * 0.7));
+          this.subFibers.push(new SubFiber(this.baseAngle, 0.18 + Math.random() * 0.17, this.maxLength, 1.0, 0.95, 0.5 + Math.random() * 0.7));
         }
       }
       update(dt, t) {
@@ -162,8 +162,7 @@
         const sway3 = Math.sin(t * this.swaySpeed3 + this.swayPhase3) * this.swayAmp3;
         this.angle = this.baseAngle + this.angleOffset + sway1 + sway2 + sway3;
         if (!this.isFading && Math.random() < this.fadeChance * dt) {
-          // front-facing needles only dip a little; edge needles keep the deep shimmer
-          this.isFading = true; this.fadeTarget = Math.min(this.baseOpacity, 0.35 + this.sinFactor * 0.35 + Math.random() * 0.2);
+          this.isFading = true; this.fadeTarget = 0.35 + Math.random() * 0.2;
         } else if (this.isFading && this.opacity <= this.fadeTarget + 0.02) {
           this.isFading = false; this.fadeTarget = this.baseOpacity * (0.9 + Math.random() * 0.1);
         }
