@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/ppc", "destination": "/google-ads", "permanent": true },
+    { "source": "/audit", "destination": "/audits", "permanent": true },
+    { "source": "/social-media-management", "destination": "/meta-ads", "permanent": true },
+    { "source": "/seo-performance-insights", "destination": "/reporting-strategy", "permanent": true },
+    { "source": "/copy-of-home", "destination": "/", "permanent": true },
+    { "source": "/copy-of-home-1", "destination": "/", "permanent": true },
+    { "source": "/copy-of-home-2", "destination": "/", "permanent": true }
+  ]
+}
