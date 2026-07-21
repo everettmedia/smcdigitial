@@ -4,6 +4,12 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "smcdigital.com.au" }],
+      "destination": "https://www.smcdigital.com.au/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "smcdigital.com.au" }],
       "destination": "https://www.smcdigital.com.au/:path*",
