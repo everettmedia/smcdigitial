@@ -3,6 +3,12 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "smcdigital.com.au" }],
+      "destination": "https://www.smcdigital.com.au/:path*",
+      "permanent": true
+    },
     { "source": "/ppc", "destination": "/google-ads", "permanent": true },
     { "source": "/audit", "destination": "/audits", "permanent": true },
     { "source": "/social-media-management", "destination": "/meta-ads", "permanent": true },
